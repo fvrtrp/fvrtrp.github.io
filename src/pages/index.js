@@ -1,22 +1,46 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import '../styles/index.scss';
+
+const IndexPage = () => {
+  const [init, setInit] = useState(false);
+  
+  useEffect(() => {
+    if(!init) {
+      setTimeout(() => changeBackground(2), 100);
+      setTimeout(openOverlay, 1000);
+      setInit(true);
+    }
+    return () => {
+      clearInterval(changeBackground);
+      clearTimeout(openOverlay);
+    };
+  }, [init]);
+
+  function changeBackground(num) {
+    const img = document.querySelector("#bgImage");
+    img.src = require(`../images/${num}.svg`);
+    setTimeout(() => changeBackground(num === 11 ? 1 : num+1), 100);
+}
+
+function openOverlay() {
+    document.getElementById('container').classList.add("blur");
+    document.getElementById('overlay').classList.add("active");
+    document.getElementById('nav').classList.add("active");
+}
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="container" id="container">
+          <img src={require(`../images/${1}.svg`)} id="bgImage" alt="logo" />
+      </div>
+      <div id="overlay"></div>
+    </Layout>
+  );
+}
 
 export default IndexPage
