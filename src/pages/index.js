@@ -15,14 +15,15 @@ const IndexPage = () => {
       setInit(true);
     }
     return () => {
-      clearInterval(changeBackground);
+      clearTimeout(changeBackground);
       clearTimeout(openOverlay);
     };
   }, [init]);
 
   function changeBackground(num) {
     const img = document.querySelector("#bgImage");
-    img.src = require(`../images/${num}.svg`);
+    if(img)
+      img.src = require(`../images/${num}.svg`);
     setTimeout(() => changeBackground(num === 11 ? 1 : num+1), 100);
 }
 
