@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import ShareIcon from '../../content/assets/share.svg';
 import BackIcon from '../../content/assets/back.svg';
 
@@ -50,7 +49,7 @@ const BlogPostTemplate = ({ data, location }) => {
             marginLeft: `auto`,
             marginRight: `auto`,
             marginTop: '50px',
-            maxWidth: rhythm(36),
+            maxWidth: '100%',
           }}>
           <header>
           </header>
