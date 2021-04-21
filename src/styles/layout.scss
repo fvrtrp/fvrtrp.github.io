@@ -1,0 +1,12 @@
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+    color: white;
+    opacity: 0.5;
+    z-index: 2;
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1696" height="1696" viewBox="0 0 1696 1696">
+  <defs>
+    <path id="path-1" fill-rule="evenodd" d="M848 65c432.14946418 0 783 350.85053582 783 783s-350.85053582 783-783 783S65 1280.14946418 65 848 415.85053582 65 848 65z"/>
+    <linearGradient id="linearGradient-2" x1="315.56" x2="1270.82" y1="190.28" y2="1584.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="rgb(123,83,255)"/>
+      <stop offset="1" stop-color="rgb(255,104,204)"/>
+    </linearGradient>
+    <mask id="mask-3" x="0" y="0" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="1696" height="1696" x="0" y="0" fill="white"/>
+      <use fill="black" xlink:href="#path-1"/>
+    </mask>
+    <rect id="rect-4" width="1325.501" height="1367.66" x="145" y="114"/>
+    <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="1696" height="1696" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-4"/>
+    </mask>
+    <linearGradient id="linearGradient-7" x1="830.376" x2="830.376" y1="256.637" y2="1401.65" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="rgb(255,91,190)"/>
+      <stop offset="1" stop-color="rgb(64,180,255)"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <g>
+      <use fill="rgb(0,0,0)" xlink:href="#path-1"/>
+      <use fill-opacity="0" stroke="url(#linearGradient-2)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="130" mask="url(#mask-3)" xlink:href="#path-1"/>
+    </g>
+    <g>
+      <use fill="none" xlink:href="#rect-4"/>
+      <g mask="url(#mask-5)">
+        <path fill-opacity="0" fill-rule="evenodd" stroke="url(#linearGradient-7)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M904.353 256.637c-118.259 48.05-192.323 109.325-210.9 186.8-49.084 204.673 322.931 385.581 296.714 631.783-13.2 123.93-116.924 232.1-283.754 326.43"/>
+        <g opacity=".28">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M1055.353 286.637c-118.259 48.05-192.323 109.325-210.9 186.8-49.084 204.673 322.928 385.581 296.718 631.783-13.2 123.93-116.928 232.1-283.758 326.43"/>
+        </g>
+        <g opacity=".28">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M753.353 286.637c-118.259 48.05-192.323 109.325-210.9 186.8-49.084 204.673 322.931 385.581 296.714 631.783-13.2 123.93-116.924 232.1-283.754 326.43"/>
+        </g>
+        <g opacity=".15">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M622.353 286.637c-118.259 48.05-192.323 109.325-210.9 186.8-49.084 204.673 322.931 385.581 296.714 631.783-13.2 123.93-116.924 232.1-283.754 326.43"/>
+        </g>
+        <g opacity=".15">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M1206.351 286.637c-118.26 48.05-192.321 109.325-210.9 186.8-49.082 204.673 322.93 385.581 296.72 631.783-13.2 123.93-116.93 232.1-283.758 326.43"/>
+        </g>
+        <g opacity=".07">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M1333.351 286.637c-118.26 48.05-192.32 109.325-210.9 186.8-49.08 204.669 322.93 385.577 296.72 631.779-13.2 123.93-116.93 232.1-283.76 326.43"/>
+        </g>
+        <g opacity=".07">
+          <path fill-opacity="0" fill-rule="evenodd" stroke="rgb(255,255,255)" stroke-dasharray="0 0 0 0" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="100" d="M510.353 286.637c-118.259 48.05-192.323 109.325-210.9 186.8-49.084 204.673 322.931 385.581 296.714 631.783-13.2 123.93-116.924 232.1-283.754 326.43"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

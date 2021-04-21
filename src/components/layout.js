@@ -1,65 +1,45 @@
-import React, { useEffect } from "react"
-import { Link } from "gatsby"
-import sqzBright from '../../content/assets/sqzBright.png'
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
 
-import '../styles/styles.scss';
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-const Layout = (props) => {
-  const { title, children, backgroundImage } = props;
-  const categories = ['home', 'blog', 'poetry', 'fiction', 'reviews'];
-  const header = (
-    <h1><Link style={{ color:`inherit` }} to={`/`}>{title}</Link></h1>
-  );
-  
-  const goHome = () => {
-    if(props.type)
-      window.location.href="/";
-  }
-  
+import Header from "./header"
+import "../styles/layout.scss"
+
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return (
     <>
-    <div className="sidebarContainer">
-      <div className="hamburger" onClick={goHome} title="Home">
-        <img className="logo" src={sqzBright} alt="logo" />
-      </div>
-      {
-        !props.type &&
-        <div className="categories">
-        {
-          categories.map((item, index) => (
-            <div
-              key={index}
-              className="category"
-              onClick={()=>props.updateActiveCategory(item, props.type)}
-            >
-              <div className="text">{item}</div>
-              <div className="overlay"></div>
-            </div>
-          ))
-        }
-        <Link to="/about"
-          className="category"
-        >About</Link>
-      </div>
-      }
-    </div>
-    <div
-      id="opacityContainer"
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        padding: `30px 20px`,
-        zIndex: 5,
-        position: 'relative'
-      }}
-    >
-      <header className="pageHeader" title="Silent Observations">{header}</header>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
-      <footer>
-      </footer>
-    </div>
+      <div className="footer">
+        <footer>
+        <a href="https://fvrtrp.com">©{new Date().getFullYear()}
+          {` `}
+        FVRTRP</a>
+        </footer>
+      </div>
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
