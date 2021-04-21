@@ -25,7 +25,7 @@ export default function Background() {
     Promise.all(IMAGES.map(image => loadImage(image)))
       .then(() => {
         let intervalId = setInterval(changeBackground, 100);
-        setTimeout(openOverlay, 1000);
+        setTimeout(openOverlay, 0);
         setIntervalId(intervalId);
         setImgsLoaded(true);
         const container = document.querySelector("#backgroundContainer");

@@ -8,7 +8,8 @@ const Header = ({ siteTitle }) => (
     id="nav"
   >
     <Link to="/">home</Link>
-    <Link to="/sesh">sesh</Link>
+    <Link to="/sesh">apps</Link>
+    <Link to="/blog">blog</Link>
   </header>
 )
 
