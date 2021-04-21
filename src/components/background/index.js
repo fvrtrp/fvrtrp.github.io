@@ -63,7 +63,7 @@ export default function Background() {
     if(nav) nav.classList.add("active");
   }
 
-  if(!imgsLoaded) {
+  if(true) {
     return <Loader/>
   }
   
