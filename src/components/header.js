@@ -4,10 +4,10 @@ import React, {useEffect} from "react";
 
 const navItems = [
   {title: 'home', link: "/", description: "go back home"},
-  {title: 'apps', link: "/sesh", description: "appsu"},
+  {title: 'apps', link: "/apps", description: "appsu"},
   {title: 'blog', link: "/blog", description: "what's a blog"},
   {title: 'about', link: "/about", description: "what's a fever trip"},
-]
+];
 
 let enableHover = false;
 
@@ -15,6 +15,8 @@ const onNavMouseOver = (id) => {
   if(!enableHover)
     return;
   onNavMouseOut();
+  const navParent = document.querySelector(`#nav`);
+  if(navParent)  navParent.classList.add('expanded');
   const targetNav = document.querySelector(`#nav-${id}`);
   if(targetNav)  targetNav.classList.add('show');
   const targetItem = document.querySelector(`#linkItem-${id}`);
@@ -22,6 +24,8 @@ const onNavMouseOver = (id) => {
 }
 
 const onNavMouseOut = () => {
+  const navParent = document.querySelector(`#nav`);
+  if(navParent)  navParent.classList.remove('expanded');
   const navItems = document.querySelectorAll('.linkDescription');
   navItems.forEach(item => {
     item.classList.remove("show");

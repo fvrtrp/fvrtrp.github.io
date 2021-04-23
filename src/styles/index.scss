@@ -86,8 +86,12 @@ a {
     z-index: 4;
     opacity: 0;
     transition: opacity 3s ease-in-out;
+    height: 60px;
     &.active {
         opacity: 1;
+    }
+    &.expanded {
+        height: 100%;
     }
     .linkItem {
         width: 100px;
@@ -97,11 +101,13 @@ a {
         justify-content: center;
         align-items: center;
         position: relative;
+        //pointer-events: none;
         &.expanded {
             width: 300px;
             border-left: 0.1px solid rgb(61, 61, 61);
             border-right: 0.1px solid rgb(61, 61, 61);
             background: rgba(0, 0, 0, 0.8);
+            pointer-events: initial;
         }
         .linkTitle {
             font-family: 'Source Sans Pro', sans-serif;
