@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import NotFoundImage from '../images/404.svg';
+import '../styles/404.scss';
 
 const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -10,8 +12,11 @@ const NotFoundPage = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Page Not Found" />
-      <h1>Not Found</h1>
-      <p>You really wanted to end up here, didn't you?</p>
+      <div className="notFoundPage">
+        <img src={NotFoundImage} alt="page not found" className="notFoundImage" />
+        <h1 className="notFoundText">YOU WERE NEVER SUPPOSED TO BE HERE.</h1>
+      </div>
+      <div id="whitenoise"></div>
     </Layout>
   )
 }

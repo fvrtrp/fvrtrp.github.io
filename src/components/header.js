@@ -1,12 +1,13 @@
 import { Link } from "gatsby";
 import { navigate } from "@reach/router" ;
 import React, {useEffect} from "react";
+import '../styles/header.scss';
 
 const navItems = [
-  {title: 'home', link: "/", description: "go back home"},
-  {title: 'apps', link: "/apps", description: "appsu"},
-  {title: 'blog', link: "/blog", description: "what's a blog"},
-  {title: 'about', link: "/about", description: "what's a fever trip"},
+  {title: 'home', link: "/", description: <div>go back home</div>},
+  {title: 'apps', link: "/apps", description: <div>SEE WHAT<br/>WE'VE BEEN<br/>BREWING<br/>DURING<br/>THE<br/>NIGHT</div>},
+  {title: 'blog', link: "/blog", description: <div>TAKE A LOOK<br/>AT WHAT<br/>DRIVES US,<br/>AND HOW WE<br/>DO<br/>WHAT WE DO.</div>},
+  {title: 'about', link: "/about", description: <div>WHAT<br/>IS<br/>FEVER TRIP?</div>},
 ];
 
 let enableHover = false;
@@ -49,12 +50,18 @@ const onMouseMove = () => {
 }
 
 const getItemDescription = (item) => {
-  if(window.location.pathname === item.link) {
-    return "You are already here";
+  if(onCurrentPage(item.link)) {
+    return <div>
+      You are<br/>already<br/>here.
+    </div>
   }
   else {
     return item.description;
   }
+}
+
+const onCurrentPage = (link) => {
+  return window.location.pathname === link;
 }
 
 const Header = (props) => {
@@ -77,7 +84,7 @@ const Header = (props) => {
               {getItemDescription(item)}
             </div>
             <div
-              className="linkTitle"
+              className={`linkTitle ${onCurrentPage(item.link) ? 'active' : ''}`}
               onMouseOver={()=>onNavMouseOver(item.title)}
               onMouseOut={onNavMouseOut}
               onClick={()=>linkClicked(item.link)}

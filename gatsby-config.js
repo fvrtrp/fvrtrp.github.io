@@ -76,24 +76,24 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Source Sans Pro`,
-            variants: [`300`, `400`],
+            family: `Source Code Pro`,
+            variants: [`400`],
           },
           {
-            family: `Alegreya Sans`,
+            family: `Space Mono`,
+            variants: [`400, 400i`]
+          },
+          {
+            family: `Abril Fatface`,
             variants: [`400`]
           },
           {
-            family: `Poppins`,
-            variants: [`800`]
+            family: `Roboto Mono`,
+            variants: [`400, 400i`]
           },
           {
-            family: `Playfair Display`,
-            variants: [`900`]
-          },
-          {
-            family: `Raleway`,
-            variants: [`300`]
+            family: `Lato`,
+            variants: [`700`]
           },
         ],
       },
