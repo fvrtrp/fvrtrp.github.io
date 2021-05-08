@@ -1,0 +1,40 @@
+.parent {
+    .appItem {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        .appTitle {
+            position: relative;
+            width: fit-content;
+            margin-right: 70px;
+            h3 {
+                font: 16px 'Space Mono', sans-serif;
+                color: #92FF07;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+            }
+            .underlineSmall {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 14px;
+                right: 0;
+                height: 0.5em;
+                width: 100%;
+                border-top: 6px solid #92FF07;
+                z-index: -1;
+            }
+            >img {
+                position: absolute;
+                right: -30px;
+                top: 17px;
+            }
+        }
+        .appDescription {
+            margin: 0;
+            font: 14px 'Lato', sans-serif;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+    }
+}

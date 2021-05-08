@@ -1,5 +1,5 @@
 ---
-title: A pledge for truth.
+title: Get these things straight in your simulation hypothesis
 background: https://cdnb.artstation.com/p/assets/images/images/019/030/293/large/bakiyaraj-pandurangan-concept-015b.jpg
 category: blog
 background_artist: https://www.artstation.com/bakiyaraj
@@ -7,33 +7,36 @@ subtitle: Pursuits.
 date: 2019-09-19
 ---
 
-Alright, I'm going to embarrass myself again, but here we go.
-I've successfully turned this blog into self-help material now (the self being me, not you, the reader).
-But let's keep doing that.
+fvrtrp
 
-# Note about self help
-I used to believe that it's not worth motivating myself with these little articles because they're never followed up correctly, but lately I've come to realise that what matters is the push, even if it doesn't have a direct impact. Every article pushes me towards the goal, and it's about gaining momentum the right direction till it overpowers the unwanted parts. The journey is about veering and correcting my boat the right direction with all kinds of tiny nudges and tugs, through the storm.
-So, to know where to direct my boat, I need to ask questions.
-And then try to answer them, and maybe come up with naive, idealistic plans that even though most probably fail, will still set me up in the zone.
+get these things straight in your simulation hypothesis-
 
-# Why am I doing what I'm doing?
-Honestly, I don't know. I'm still recovering from a gigantic failure that my Master's was, and found a low paying job. After starting to work, I lost the plot, partly due to the shift of focus towards my father's health, but mostly due to incompetence. I like being carried by the currents, just drifting through the waves, and being caught up in the moment. Foresight has always been an issue for me, and I have recognised that. Right now, I am aware of my foibles.
+Well, you have taken the cooler route; you believe we live in a simulation. You believe in the other kind of God; a nerd genius either by will or chance sparked the right connections and here we are, billions of years later.
+Assuming we got it right till that part, I'd like to lay out some of my thoughts that might help you straighten your narrative.
 
-# Where do I wanna be?
-Definitely not here.
-The idea of finding out how we actually work, and the pursuit of mimicking that interests the fuck out of me. More specifically, the study of human brain / Artificial Intelligence.
-However, I don't know how this interest might translate into contributions even remotely useful in this endeavor. More importantly, I definitely do not have the tools / mental faculty to do that. However, I'm still young, and can definitely amount to something if the right decisions are taken at the right times.
-And I definitely think it's an idea worth pursuing in the long run.
+# Humans are not the center of it (or, you are not special)
+Many people straight up assume the simulation is like a video game, and attribute special weight to ourselves, thinking if one day the creator might just show up at your door, or that we might be contacted as a species by the one.
+I see no difference between the people who believe that God created us humans special, and you. No, unfortunately we're not at the center of it all this time, okay?
+The creator does not check in occasionally to see how you're doing, there are billions of us, humans and otherwise, in just this one puny planet. Imagine the scale at which the creator operates, and look at you. You do not matter, and your theory falls out the moment you assign a special place for us in it.
 
-# What do I gotta do?
-For starters, I have to be at the command of controls, be fast af. 
-Mind's gotta rush, run and pull.
-I have wasted away a lot of time, but hey it's never too late.
-It's time to aspire to be good at stuff, and not be content with mediocrity.
-Realisation was the first step, and now I've got to make this state of mind a habit. And habit will take care of the niggles, and straighten me out.
-Technically, I need to be leagues better at programming. And typing, for god's sake. It's been years since I learned how to type, and I still struggle. Coding should be a habit, a natural extension of how I think; it has to be an elegant, structured process of reading, thinking, brain storming, and coding (should be the easy part).
-I've gotta pull myself out of the zone-outs every time they happen.
-I gotta stay in the moment, when the action is happening, putting all my efforts into finishing the task at hand impeccably.
-Gotta get out more often, take lots of breaks / walks. Staying in the same place breeds nothing but banality.
 
-Here's hoping for a bright time ahead.
+# The earth is not the center of it (or, you are not special)
+Again, thinking if we're reaching some kind of pinnacle in terms of where we are headed is absolutely naive. You are not at the verge of something truly breaking. We are still yet to crack multi planetary habitation, and you assume we're so close to meeting the simulator? How obscene.
+Think of our planet as a speck of dust on a beach. Again, your theory cannot place our planet at the center of it. We're cogs of a gigantic gear. Maybe we can one day cause enough disruption to make the creator check what's going on, but not yet.
+
+
+# Glitches are not going to be what you want
+Another common assumption is that the simulation is like a VR experience, or something intangible like a video game/program, and any probable bugs could be found if think this way.
+I would say the simulation, like a dream till you wake up, will be real. Don't take my word for it, you can feel it right now. None of this is fake, right?
+There are no bugs in the simulation because, us being part of the whole thing, these are features. This is just how it works. And unless the glitch happens without defying our current physics models, it's always just how it's supposed to work.
+The simulation will continue, glitchy or not, and we will live through it assuming this is exactly how it should work.
+
+# There's no end game - it won't end with you meeting the creator... He is living in a simulation too.
+Let's say that one day, you just manage to barely talk to the creator. He sees you making a ruckus in his program, his aws server generating high bills (as Geohotz stated) and a few fruitfalls later, we develop a channel and a language to communicate with. 
+Granted, it will be monumental for us, but probably not for the creator.
+Who says he himself is not part of another simulation? And that there are no other simulations inadvertently kickstarted by him?
+Are you inadvertently making a simulation right now?
+The end game, always is that either it's an infinite series of universes encompassing the smaller ones, or somehow it loops into the first one at a point.
+
+Our perception of space, time and matter is still very nascent; so hey, who knows maybe one day your computer overheats and you find little minions making their way out of it.
+Or maybe it was just bitcoin mining.

@@ -7,7 +7,7 @@ const navItems = [
   {title: 'home', link: "/", description: <div>go back home</div>},
   {title: 'apps', link: "/apps", description: <div>SEE WHAT<br/>WE'VE BEEN<br/>BREWING<br/>DURING<br/>THE<br/>NIGHT</div>},
   {title: 'blog', link: "/blog", description: <div>TAKE A LOOK<br/>AT WHAT<br/>DRIVES US,<br/>AND HOW WE<br/>DO<br/>WHAT WE DO.</div>},
-  {title: 'about', link: "/about", description: <div>WHAT<br/>IS<br/>FEVER TRIP?</div>},
+  //{title: 'about', link: "/about", description: <div>WHAT<br/>IS<br/>FEVER TRIP?</div>},
 ];
 
 let enableHover = false;

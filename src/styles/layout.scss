@@ -10,3 +10,40 @@
         opacity: 1;
     }
 }
+
+.layoutContainer {
+    .mainContent {
+        width: 66.66%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 15px;
+        .pageHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+            .pageTitle {
+                font: 45px 'Abril Fatface', serif;
+                letter-spacing: 2.57px;
+                color: #92FF07;
+            }
+            .searchBar {
+                input {
+                    background: #282828;
+                    border: none;
+                    outline: none;
+                    font: 12px 'Source Code Pro', sans-serif;
+                    letter-spacing: 1.71px;
+                    color: white;
+                    height: 40px;
+                    width: 355px;
+                    text-align: center;
+                    border-radius: 5px;
+                    &::-webkit-input-placeholder {
+                        color: #919191;
+                    }
+                }
+            }
+        }
+    }
+}
