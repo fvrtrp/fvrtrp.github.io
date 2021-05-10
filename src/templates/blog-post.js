@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ShareIcon from '../../content/assets/share.svg';
-import BackIcon from '../../content/assets/back.svg';
+import ShareIcon from '../images/share.svg';
+import BackIcon from '../images/back.svg';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark;
@@ -32,30 +32,16 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <Layout
-      location={location}
       title={post.frontmatter.title}
-      backgroundImage={post.frontmatter.background}
-      type="post"
+      type="clean"
     >
       <SEO
         title={post.frontmatter.title}
-        description={post.frontmatter.subtitle || post.excerpt}
-        ogImage={post.frontmatter.background}
+        description={post.excerpt}
+        //ogImage={post.frontmatter.background}
       />
-      <article className="article">
-        <div className={`content blogPost ${post.frontmatter.category === 'poetry' ? 'fitContent' : ''}`}
-          style={{
-            position: 'relative',
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            marginTop: '50px',
-            maxWidth: '100%',
-          }}>
-          <header>
-          </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <footer>
-          </footer>
+      <div className="article">
+        <div className="articleTitle">
           <div className="backButton" onClick={goHome} title="Back">
             <img
               className="backIcon"
@@ -63,15 +49,11 @@ const BlogPostTemplate = ({ data, location }) => {
               alt="Back"
             />
           </div>
+          <h1>{post.frontmatter.title}</h1>
         </div>
         <div className="articleMeta">
-          <div className={`date articleDate`}>
-            {post.frontmatter.date}
-          </div>
-          <h3 className="metaSubtitle">
-            {post.frontmatter.subtitle || post.frontmatter.category}
-          </h3>
-          {post.frontmatter.background_artist && <a className="coverArtist" href={post.frontmatter.background_artist} target="_blank">cover image artist</a>}
+          <div className="articleDate">{post.frontmatter.date}</div>
+          <div className="articleAuthor">by Suraj</div>
           <div className="tooltipcontainer">
             <img
               onClick={copyToClipboard}
@@ -83,7 +65,13 @@ const BlogPostTemplate = ({ data, location }) => {
             <span id="tooltiptext" className="tooltiptext">Copy Link</span>
           </div>
         </div>
-      </article>
+        <article dangerouslySetInnerHTML={{ __html: post.html }} />
+        <footer>
+        </footer>
+        <div className="articleMeta">
+          
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -105,9 +93,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMDD, YYYY")
-        subtitle
-        background
-        background_artist
         category
       }
     }

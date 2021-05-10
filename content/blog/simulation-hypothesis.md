@@ -1,15 +1,8 @@
 ---
 title: Get these things straight in your simulation hypothesis
-background: https://cdnb.artstation.com/p/assets/images/images/019/030/293/large/bakiyaraj-pandurangan-concept-015b.jpg
-category: blog
-background_artist: https://www.artstation.com/bakiyaraj
-subtitle: Pursuits.
-date: 2019-09-19
+category: appjourneys, pleb.exe
+date: 2021-05-09
 ---
-
-fvrtrp
-
-get these things straight in your simulation hypothesis-
 
 Well, you have taken the cooler route; you believe we live in a simulation. You believe in the other kind of God; a nerd genius either by will or chance sparked the right connections and here we are, billions of years later.
 Assuming we got it right till that part, I'd like to lay out some of my thoughts that might help you straighten your narrative.

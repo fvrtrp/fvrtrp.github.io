@@ -1,88 +1,90 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import '../styles/blog.scss';
 
 const BlogIndex = ({ data, location }) => {
 
-  let [activeCategory, setActiveCategory] = useState(null);
-  let [cardInfo, setCardInfo] = useState({
-    background: null,
-    title: '',
-  });
+  const [ searchTerm ,setSearchTerm ] = useState('');
+  const [ filteredItems, setFilteredItems ] = useState([]);
 
-  const updateActiveCategory = (category) => {
-    const el = document.querySelector('#opacityContainer');
-    el.classList.add('hidden');
-    setTimeout(()=> {
-      setActiveCategory(category);
-      el.classList.remove('hidden');
-    }, 200
-    );
+  useEffect(() => {
+    handleSearch();
+  }, [searchTerm]);
+
+
+  let posts = data.allMarkdownRemark.edges;
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
   }
-  
-  const siteTitle = data.site.siteMetadata.title;
-  let posts = data.allMarkdownRemark.edges.filter(({node}) => {
-    if(activeCategory === null || activeCategory === 'home')
-      return true;
-    return node.frontmatter.category === activeCategory
-  });
+
+  const handleSearch = () => {
+    if(searchTerm.trim() === '') {
+      setFilteredItems(posts);
+      return;
+    }
+    const filteredItems = posts.filter(i => (
+      i.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
+      || i.node.frontmatter.category.toLowerCase().includes(searchTerm.toLowerCase())
+    ))
+    console.log(`after search`, filteredItems);
+    setFilteredItems(filteredItems);
+  }
+
+  console.log(`zzz post`, posts);
 
   return (
     <Layout
-      location={location}
-      title={siteTitle}
-      backgroundImage={cardInfo ? cardInfo.background : null}
-      activeCategory={activeCategory}
-      updateActiveCategory={updateActiveCategory}
+      title={"Blog"}
+      type="clean"
     >
       <SEO
-        title={data.site.siteMetadata.title}
-        description={data.site.siteMetadata.description}
-        ogImage={data.site.siteMetadata.image}
+        title={"Blog"}
+        description={"take a look at what drives us, and how we do what we do"}
       />
-      {
-        !posts.length &&
-        <div className="noContent">
-          Square zero.<br/>Nothing yet.
+      <div className="parent">
+        <div className="pageHeader">
+          <h1 className="pageTitle">Blog</h1>
+          <div className="searchBar">
+            <input
+              value={searchTerm}
+              placeholder="SEARCH FOR TITLE, CATEGORY ETC"
+              onChange={handleChange}
+            />
+          </div>
         </div>
-      }
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
+      {filteredItems.map(({ node }, index) => {
+        const title = node.frontmatter.title || node.fields.slug;
+        const categories = node.frontmatter.category.split(",");
         return (
-          <article
-            key={node.fields.slug}
-            className="homeCard"
+          <div
+            key={index}
+            className="blogItem"
           >
-            <div className="content" style={{
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                width: '500px',
-                maxWidth: '100%',
-              }}>
-              <header>
-                <h3><Link to={node.fields.slug}>
-                  {title}
-                </Link></h3>
-              </header>
-              <section className={`subtitle ${cardInfo.title === node.frontmatter.title ? 'showSubtitle' : ''}`}>
-                <Link to={node.fields.slug}>
-                  {node.frontmatter.subtitle || node.excerpt}
-                </Link>
-              </section>
+            <div className="blogMeta">
+              <div className={`blogDate`}>
+                {node.frontmatter.date}
+              </div>
+              <div className="categories">
+              {
+                (categories.map((item, index) => {
+                  return (
+                    <span key={index} className="hashtag">#{item}</span>
+                  )
+                }))
+              }
+              </div>
             </div>
-            <div className="cardSeparator" style={{
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                maxWidth: '50px',
-              }}></div>
-            <div className={`date homeDate ${cardInfo.title === node.frontmatter.title ? 'highlightDate' : ''}`}>
-              {node.frontmatter.date}
-            </div>
-          </article>
+            <h3 className="blogTitle"><Link to={node.fields.slug}>
+              {title}
+            </Link></h3>
+          </div>
         )
       })}
+      </div>
     </Layout>
   )
 }
@@ -95,10 +97,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        image
-        social {
-          email
-        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -111,8 +109,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMDD, YYYY")
             title
-            subtitle
-            background
             category
           }
         }
