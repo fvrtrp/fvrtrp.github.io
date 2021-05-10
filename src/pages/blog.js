@@ -9,16 +9,25 @@ const BlogIndex = ({ data, location }) => {
 
   const [ searchTerm ,setSearchTerm ] = useState('');
   const [ filteredItems, setFilteredItems ] = useState([]);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    const urlSearch = window.location.search;
+    if(!loaded && urlSearch) {
+      handleChange(urlSearch.split("=")[1]);
+      setLoaded(true);
+      return;
+    }
     handleSearch();
+    setLoaded(true);
+    console.log(`zzz path`, window.location);
   }, [searchTerm]);
 
 
   let posts = data.allMarkdownRemark.edges;
 
   const handleChange = (e) => {
-    setSearchTerm(e.target.value);
+    setSearchTerm(e.target ? e.target.value : e);
   }
 
   const handleSearch = () => {
@@ -26,15 +35,39 @@ const BlogIndex = ({ data, location }) => {
       setFilteredItems(posts);
       return;
     }
-    const filteredItems = posts.filter(i => (
-      i.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
-      || i.node.frontmatter.category.toLowerCase().includes(searchTerm.toLowerCase())
-    ))
-    console.log(`after search`, filteredItems);
+    let filteredItems = [];
+    if(searchTerm.startsWith("#")) {
+      filteredItems = posts.filter(i => (
+        i.node.frontmatter.category.toLowerCase().includes(searchTerm.replace("#", "").toLowerCase())
+      ))
+    }
+    else {
+      filteredItems = posts.filter(i => (
+        i.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
+        || i.node.frontmatter.category.toLowerCase().includes(searchTerm.toLowerCase())
+      ))
+    }
     setFilteredItems(filteredItems);
   }
 
-  console.log(`zzz post`, posts);
+  const blurNonFocused = (id) => {
+    const items = document.querySelectorAll(".blogItem");
+    items.forEach(i => {
+      if(id === i.id) {
+        i.classList.remove("blur");
+      }
+      else {
+        i.classList.add("blur");
+      }
+    });
+  }
+
+  const unBlurAll = () => {
+    const items = document.querySelectorAll(".blogItem");
+    items.forEach(i => {
+      i.classList.remove("blur");
+    });
+  }
 
   return (
     <Layout
@@ -63,6 +96,9 @@ const BlogIndex = ({ data, location }) => {
           <div
             key={index}
             className="blogItem"
+            id={`blogItem-${index}`}
+            onMouseOver={()=>blurNonFocused(`blogItem-${index}`)}
+            onMouseOut={unBlurAll}
           >
             <div className="blogMeta">
               <div className={`blogDate`}>
@@ -72,7 +108,13 @@ const BlogIndex = ({ data, location }) => {
               {
                 (categories.map((item, index) => {
                   return (
-                    <span key={index} className="hashtag">#{item}</span>
+                    <span
+                      key={index}
+                      className="hashtag"
+                      onClick={()=>handleChange(`#${item}`)}
+                    >
+                      #{item}
+                    </span>
                   )
                 }))
               }

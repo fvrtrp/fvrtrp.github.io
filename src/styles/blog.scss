@@ -1,5 +1,8 @@
 .blogItem {
     margin: 20px 0;
+    &.blur {
+        filter: blur(1px);
+    }
     .blogMeta {
         display: flex;
         .blogDate {
@@ -14,6 +17,7 @@
             color: #888888;
             .hashtag {
                 cursor: pointer;
+                margin-right: 10px;
             }
         }
     }

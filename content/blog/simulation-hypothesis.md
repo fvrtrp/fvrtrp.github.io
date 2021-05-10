@@ -1,6 +1,6 @@
 ---
 title: Get these things straight in your simulation hypothesis
-category: appjourneys, pleb.exe
+category: appjourneys,pleb.exe
 date: 2021-05-09
 ---
 

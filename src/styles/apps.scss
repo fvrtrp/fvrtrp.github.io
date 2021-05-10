@@ -2,11 +2,15 @@
     .appItem {
         display: flex;
         align-items: center;
-        margin: 15px 0;
+        padding: 15px 0;
+        &.blur {
+            filter: blur(1px);
+        }
         .appTitle {
             position: relative;
             width: fit-content;
             margin-right: 70px;
+            display: flex;
             h3 {
                 font: 16px 'Space Mono', sans-serif;
                 color: #92FF07;
@@ -24,7 +28,7 @@
                 border-top: 6px solid #92FF07;
                 z-index: -1;
             }
-            >img {
+            img {
                 position: absolute;
                 right: -30px;
                 top: 17px;
