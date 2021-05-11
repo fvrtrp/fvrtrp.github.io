@@ -1,0 +1,61 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    .left {
+        flex-basis: 70%;
+        font-family: 'Ubuntu', sans-serif;
+        letter-spacing: 1px;
+        h1 {
+            color: #92FF07;
+            margin-top: 0;
+            font-size: 50px;
+        }
+        h4 {
+            font-weight: 400;
+            line-height: 1.4;
+        }
+        .highlight {
+            color: #21FFA2;
+        }
+    }
+    .right {
+        flex-basis: 25%;
+        margin-top: 50px;
+        .profileItem {
+            position: relative;
+            width: fit-content;
+            font: 16px 'Space Mono', sans-serif;
+            // text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            color: #92FF07;
+            cursor: pointer;
+            margin-bottom: 25px;
+            padding: 0 10px;
+            a {
+                position: relative;
+                z-index: 3;
+                transition: color 0.5s ease-in-out;
+            }
+            .progress {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0;
+                height: 100%;
+                background: #92FF07;
+                pointer-events: none;
+                transition: width 0.2s ease-in-out;
+            }
+            &:hover {
+                a {
+                    color: black;
+                }
+                .progress {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
