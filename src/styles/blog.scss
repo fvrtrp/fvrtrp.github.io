@@ -1,7 +1,7 @@
 .blogItem {
     margin: 20px 0;
     &.blur {
-        filter: blur(1px);
+        filter: blur(5px);
     }
     .blogMeta {
         display: flex;
@@ -97,12 +97,18 @@
 
     article {
         margin-bottom: 200px;
+        white-space: break-spaces;
+        text-align: justify;
+        line-height: 1.5;
         h1 {
             font: 900 22px 'Poppins', sans-serif;
             letter-spacing: 6px;
             text-transform: uppercase;
-            margin: 45px 0 20px;
+            margin: 25px 0 0;
             color: #DDDDDD;
+        }
+        a {
+            color: #92FF07;
         }
     }
 }
