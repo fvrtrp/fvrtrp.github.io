@@ -85,7 +85,6 @@ const BlogIndex = ({ data, location }) => {
               value={searchTerm}
               placeholder="SEARCH FOR TITLE, CATEGORY ETC"
               onChange={handleChange}
-              autoFocus
             />
           </div>
         </div>

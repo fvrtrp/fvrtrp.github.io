@@ -75,7 +75,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Source Code Pro\:400`, `Space Mono\:400,400i`, `Abril Fatface\:400`, `Roboto Mono\:400,400i`, `Lato\:700`,
+          `Source Code Pro\:400`, `Space Mono\:400,400i`, `Abril Fatface\:400`, `Roboto Mono\:400,400i`, `Lato\:700`, `Poppins\:900`
         ],
         display: `swap`
       },

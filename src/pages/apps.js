@@ -66,7 +66,6 @@ const AppsPage = (props) => {
               value={searchTerm}
               placeholder="SEARCH FOR TITLE, DESCRIPTION ETC"
               onChange={handleChange}
-              autoFocus
             />
           </div>
         </div>
