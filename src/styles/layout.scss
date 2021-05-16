@@ -12,6 +12,11 @@
 }
 
 .layoutContainer {
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
     .mainContent {
         width: 66.66%;
         max-width: 900px;
@@ -21,7 +26,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 75px;
+            //height: 75px;
             .pageTitle {
                 font: 45px 'Abril Fatface', serif;
                 letter-spacing: 2.57px;
@@ -45,5 +50,21 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 640px) {
+    .layoutContainer {
+        height: calc(100vh - 50px);
+        .mainContent {
+            width: 95%;
+            .pageHeader {
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .footer {
+        display: none;
     }
 }

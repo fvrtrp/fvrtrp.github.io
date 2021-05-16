@@ -75,12 +75,15 @@
 }
 
 
-@media (max-width: 580px) {
+@media (max-width: 640px) {
     .nav {
-        justify-content: flex-start;
-        max-height: 200px;
-        div, a {
-            font-size: 14px;
+        background: black;
+        width: 100%;
+        .linkItem {
+            width: 100px;
+            .linkTitle {
+                font-size: 14px;
+            }
         }
-    }
+    }  
 }

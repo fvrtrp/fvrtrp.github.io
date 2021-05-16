@@ -59,3 +59,10 @@
         }
     }
 }
+
+@media (max-width: 640px) {
+    .profile {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+}

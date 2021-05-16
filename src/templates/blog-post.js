@@ -42,6 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
       />
       <div className="article">
         <div className="articleTitle">
+          <h1>{post.frontmatter.title}</h1>
           <div className="backButton" onClick={goHome} title="Back">
             <img
               className="backIcon"
@@ -49,7 +50,6 @@ const BlogPostTemplate = ({ data, location }) => {
               alt="Back"
             />
           </div>
-          <h1>{post.frontmatter.title}</h1>
         </div>
         <div className="articleMeta">
           <div className="articleDate">{post.frontmatter.date}</div>

@@ -1,5 +1,6 @@
 .blogItem {
     margin: 20px 0;
+    transition: filter 0.3s ease-in-out;
     &.blur {
         filter: blur(5px);
     }
@@ -68,8 +69,8 @@
         display: inline-block;
         cursor: pointer;
         margin-top: 7px;
-        @media (max-width: 767px) {
-            margin-top: 15px;
+        @media (max-width: 640px) {
+            margin-top: 6px;
             img {
                 width: 28px;
             }
@@ -109,6 +110,42 @@
         }
         a {
             color: #92FF07;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .blogItem {
+        margin: 40px 0;
+        .blogMeta {
+            .categories {
+                margin-left: 40px;
+            }
+        }
+        .blogTitle {
+            font-size: 20px;
+        }
+    }
+    .article {
+        .articleMeta {
+            margin-top: 0;
+        }
+        .articleTitle {
+            h1 {
+                font-size: 35px;
+            }
+            .backButton {
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+        }
+        article {
+            text-align: left;
+            h1 {
+                font-size: 18px;
+                letter-spacing: 3px;
+            }
         }
     }
 }
