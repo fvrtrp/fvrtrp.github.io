@@ -4,13 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import '../styles/apps.scss';
 import VisitIcon from '../images/visit.svg';
+import appsList from '../app-list';
 
-const appsList = [
-  {title: 'Sesh', description: 'New tab extension for Google Chrome', link: 'https://fvrtrp.com/sesh'},
-  {title: 'Player of words', description: 'PRACTICE ENGLISH WORD BY WORD', link: 'https://fvrtrp.com/player-of-words'},
-  {title: 'Darktionary', description: 'Dictionary, but dark', link: 'https://fvrtrp.com/darktionary'},
-  {title: 'YTG', description: 'Youtube Thumbnail grabber', link: 'https://fvrtrp.com/ytg'},
-];
 
 const AppsPage = (props) => {
   const [ searchTerm ,setSearchTerm ] = useState('');
@@ -33,7 +28,6 @@ const AppsPage = (props) => {
       || i.description.toLowerCase().includes(searchTerm.toLowerCase())
       || i.link.toLowerCase().includes(searchTerm.toLowerCase())
     ))
-    console.log(`after search`, filteredItems);
     setFilteredItems(filteredItems);
   }
 

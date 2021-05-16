@@ -20,7 +20,6 @@ const BlogIndex = ({ data, location }) => {
     }
     handleSearch();
     setLoaded(true);
-    console.log(`zzz path`, window.location);
   }, [searchTerm]);
 
 

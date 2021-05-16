@@ -1,7 +1,7 @@
 ---
 title: Get these things straight in your simulation hypothesis
 category: appjourneys,pleb.exe
-date: 2021-05-09
+date: 2021-05-15
 ---
 
 Well, you have taken the cooler route; you believe we live in a simulation. You believe in the other kind of God; a nerd genius either by will or chance sparked the right connections and here we are, billions of years later.

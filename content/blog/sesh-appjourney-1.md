@@ -1,13 +1,13 @@
 ---
 title: How I made Sesh Part I
 category: appjourneys,pleb.exe,sesh
-date: 2021-05-09
+date: 2021-04-26
 ---
 
 This will be a series talking about my process making an app.
 I quite like creating apps or utilities from scratch, and I felt documenting them would be a good way to check how short I have fallen with respect to the original vision behind it, and see common patterns, fallacies and all that jazz.
 So let's get started with sesh, an extension I made for Google Chrome.
-The link is [here]
+The link is [here].
 The idea was to have a not too boring page on my Chrome everytime I open a new tab.
 I'm a sucker for minimalism, dark mode, customization yada yada so I thought of putting my recently bubbling ui-ux experience to good use. And the results are not too bad for a first time project of a respectable scale.
 
@@ -38,11 +38,6 @@ My friend Shameer even called me to discuss the app and offered some insightful 
 # 0.2 rises
 I will write about 0.2 in the coming weeks, what it set out to do, and what it ended up doing. As I stated, making observations here I think is a great idea to show others or the future you, the ideas or the method or the events of how a product shaped up.
 
-
-Simple minimal small, vanilla js etc
-But themeable
-Made ui, then how thought of all options ex. Custom message 
-The toil to finish the first beta version. All code complexity, github and chrome store issues, packaging, making first version of the site, choosing and making themes. Not unique at all themes factoried it to make fillers. Ninja only version truly different. Initial release, LinkedIn post, shameer call. Felt very satisfied accomplished proud
 
 
 [here]: http://www.reddit.com

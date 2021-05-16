@@ -31,6 +31,10 @@ const NotFoundPage = ({ data, location }) => {
             <div className="progress"></div>
           </div>
           <div className="profileItem">
+            <a href="https://www.behance.net/surajk95" target="_blank" rel="noopener noreferrer">behance</a>
+            <div className="progress"></div>
+          </div>
+          <div className="profileItem">
             <a href="/blog" target="_blank" rel="noopener noreferrer">blog</a>
             <div className="progress"></div>
           </div>
