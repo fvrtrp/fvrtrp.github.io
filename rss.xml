@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[FEVER TRIP]]></title><description><![CDATA[Silent Observations]]></description><link>http://fvrtrp.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 20:15:11 GMT</lastBuildDate><item><title><![CDATA[Get these things straight in your simulation hypothesis]]></title><description><![CDATA[Well, you have taken the cooler route; you believe we live in a simulation. You believe in the other kind of God; a nerd genius either by…]]></description><link>http://fvrtrp.com/simulation-hypothesis/</link><guid isPermaLink="false">http://fvrtrp.com/simulation-hypothesis/</guid><pubDate>Sat, 15 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Well, you have taken the cooler route; you believe we live in a simulation. You believe in the other kind of God; a nerd genius either by will or chance sparked the right connections and here we are, billions of years later.
+Assuming we got it right till that part, here are some thoughts that might help shape your narrative.&lt;/p&gt;
+&lt;h1&gt;The earth is not the center of it (or, you are not special)&lt;/h1&gt;
+&lt;p&gt;Many assume the simulation is like an enclosure/zoo, and the creator is watching us specifically.
+You might think we’re the most advanced/developed civilization out there, and naturally the simulator has a special interest in us.
+I see no difference between the people who believe that God created us humans special, and you. No, unfortunately we’re not at the center of it all this time, okay?
+The creator does not check in occasionally to see how you’re doing, there are billions of us, humans and otherwise, in just this one puny planet. Imagine the scale at which the creator operates, and look at you.
+You do not matter, and your theory falls out the moment you assign a special place for us in it.&lt;/p&gt;
+&lt;h1&gt;Humans are not the center of it (or, you are not special)&lt;/h1&gt;
+&lt;p&gt;Again, thinking if we’re reaching some kind of pinnacle in terms of where we are headed is absolutely naive. You are not at the verge of something truly breaking. We are yet to crack multi planetary habitation, and you assume we’re so close to meeting the simulator? How obscene.
+Think of our planet as a speck of dust on a beach. Again, your theory cannot place our planet at the center of it. We’re cogs of a gigantic machine. Maybe we can one day cause enough disruption to make the creator check what’s going on, but not yet.&lt;/p&gt;
+&lt;h1&gt;Glitches are not going to be what you want&lt;/h1&gt;
+&lt;p&gt;Another common assumption is that the simulation is like a VR experience, or something intangible like a video game/program, and any probable bugs could be found if you think this way.
+I would say the simulation, like a dream till you wake up, will be real. Don’t take my word for it, you can feel it right now. None of this is fake, right?
+There are no bugs in the simulation because, us being part of the whole thing, means these are features. This is just how it works. And unless the glitch happens without defying our current models of physics (and the ones we make conclude from this new observation), it’s always just how it’s supposed to work.
+The simulation will continue, glitchy or not, and we will live through it assuming this is exactly how it should work.&lt;/p&gt;
+&lt;h1&gt;There’s no end game - it won’t end with you meeting the creator… He is living in a simulation too.&lt;/h1&gt;
+&lt;p&gt;Let’s say that one day, you just manage to barely contact the creator. He sees you making a ruckus in his program; his AWS server starts generating high bills (as Geohotz joked) and a few fruitfalls later, we develop a channel and a language to communicate with.
+Granted, it will be monumental for us, but probably not for the creator.
+Who says he himself is not part of another simulation? And that there are no other simulations inadvertently kickstarted by him?
+Are you inadvertently making a simulation right now?
+The end game, always is that either it’s an infinite series of universes encompassing the smaller ones, or somehow it loops into the first one at a point.&lt;/p&gt;
+&lt;p&gt;Our perception of space, time and matter is still very nascent; so hey, who knows maybe one day your computer overheats and you find little minions making their way out of it.
+Or maybe it was just bitcoin mining.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How I made Sesh Part I]]></title><description><![CDATA[This will be a series talking about my process making an app.
+I quite like creating apps or utilities from scratch, and I felt documenting…]]></description><link>http://fvrtrp.com/sesh-appjourney-1/</link><guid isPermaLink="false">http://fvrtrp.com/sesh-appjourney-1/</guid><pubDate>Mon, 26 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This will be a series talking about my process making an app.
+I quite like creating apps or utilities from scratch, and I felt documenting them would be a good way to check how short I have fallen with respect to the original vision behind it, and see common patterns, fallacies and all that jazz.
+So let’s get started with sesh, an extension I made for Google Chrome.
+The link is &lt;a href=&quot;http://www.reddit.com&quot;&gt;here&lt;/a&gt;.
+The idea was to have a not too boring page on my Chrome everytime I open a new tab.
+I’m a sucker for minimalism, dark mode, customization yada yada so I thought of putting my recently bubbling ui-ux experience to good use. And the results are not too bad for a first time project of a respectable scale.&lt;/p&gt;
+&lt;h1&gt;development wishlist&lt;/h1&gt;
+&lt;p&gt;I wanted some things incorporated into the development process, as well as some customization options for the product.
+For development: minimal size, so I opted to write the code in vanilla js/css. The current size stands at some 47kb. v3 of the app will be way lesser than this. I wanted to write modular code, so it could be split into files that could be later added, removed or tweaked on demand, you know…modular. I think I have half succeeded in it so far.
+Another bigger thing was to take a top-down approach to decision making and coding. I tried to wean myself from dashing into selectors and callbacks without first understanding how the current work helped with the overall vision. That’s pretty rare for me, since I always usually end up writing and rewriting and hammering my head when stuff doesn’t work, and I don’t know why I coded it in the first place.
+The same approach was strived for in the ui-ux development pipeline too. Idea, requirements, (measly) research, wireframing and prototypes, yeah that’s the way. You would cringe in disappointment if I showed you how the first prototype looked.&lt;/p&gt;
+&lt;h1&gt;ui-ux wishlist&lt;/h1&gt;
+&lt;p&gt;Dark mode was first. Can’t have white light blinding me at 4am.
+Minimal content on screen. Wanted to create a soothing ui and minimalism was a priority.
+A bookmarks browser with a tree view and useful functionality:
+I wanted to have bookmarks search, a double-click-to-open-all-items, a right-click-to-open-random-item functionality right from day one. This idea was to be its own extension, but hey it finally saw the light of day this way.
+Theming/customization:
+Even I don’t have the same mood on different days, so I wanted to make different types of themes for different minds. However, this hasn’t met my expectations yet, and will be radically overhauled since the current themes look samey with different accent colors tacked on.&lt;/p&gt;
+&lt;h1&gt;the initial beta toil&lt;/h1&gt;
+&lt;p&gt;It took about a month of late night planning and coding to get the initial version shipped finally. The most frustrating part of it all wasn’t the development, but publishing it to the Chrome store; there’s a lot of kinks that had to be straightened there, including an accidental removal of my extension by its algorithm.
+However, the code after 0.1 wasn’t what I originally envisioned, and there was a lot of room to optimize and clean up.
+the 0.2 version fixed some of this, and the theming issues I mentioned before, and 0.3 will be leagues better.
+The development itself had barely any struggle or roadblocks, nothing that couldn’t be sorted out with google.&lt;/p&gt;
+&lt;h1&gt;mankind is introduced to sesh&lt;/h1&gt;
+&lt;p&gt;That line pretty much sums up the anxiety I have when sharing something with people. Although my LinkedIn isn’t super popular, this was the first time I was sharing something I had so dearly made with the network. What if people laugh at it? What if it looks so silly to the outside world? What if the design is too amateurish? were some of the recurrent thoughts haunting me. But these were just jitters that had to be disregarded, since the only way to get better at something is by seeing new perspectives, and feedback. What you do withe feedback is then upto you. So, I did it, and hey it had 7 subscribers that weren’t me by the next week.
+My friend Shameer even called me to discuss the app and offered some insightful thoughts and suggestions so that’s a big win.&lt;/p&gt;
+&lt;h1&gt;0.2 rises&lt;/h1&gt;
+&lt;p&gt;I will write about 0.2 in the coming weeks, what it set out to do, and what it ended up doing. As I stated, making observations here I think is a great idea to show others or the future you, the ideas or the method or the events of how a product shaped up.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What's a fever trip?]]></title><description><![CDATA[Inception It’s 4AM. Here I am; sleepless, on a bed in a strangeland, on a getaway.
+This is the last day. Tomorrow, I will get on a bike and…]]></description><link>http://fvrtrp.com/what is a fever trip/</link><guid isPermaLink="false">http://fvrtrp.com/what is a fever trip/</guid><pubDate>Sat, 13 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Inception&lt;/h1&gt;
+&lt;p&gt;It’s 4AM. Here I am; sleepless, on a bed in a strangeland, on a getaway.
+This is the last day. Tomorrow, I will get on a bike and travel for a grueling 7 hours in the sveltering sun and return to the monotony of every day.
+Why am I here again? Oh yes, I wanted to get out of the rut, build an impeccable routine, and try to get back in the game of being amazingly productive and creative. Not much came of it, but right now, right here, I’m having an out of body experience. Yeah, the most critical night when I need to get some sleep to be the most attentive the next day, and these ideas start creeping into my head instead of nightmares. God, I’d love instead for some ghosts to pop up in front of me when I open my eyes (not that it didn’t happen the same night earlier). I need to buy a domain right now, and I mean right now, before the sun rises. Yes. Let’s do this.&lt;/p&gt;
+&lt;p&gt;I wanted fvrtrp.io, but that’s way too expensive for what it will achieve. Okay, let’s go with fvrtrp.com. Maybe it has better readability for lay people, and have a better appeal overall.
+But what will go on here?&lt;/p&gt;
+&lt;h1&gt;What will happen here?&lt;/h1&gt;
+&lt;p&gt;I will have to build a kickass website. This will collate all my past works, and I need to blog regularly; the design has to convey the philosophy of my work, and my approach to software. It has to reflect what I am.
+And it has to be kickass.Yeah.&lt;/p&gt;
+&lt;h1&gt;The philosophy&lt;/h1&gt;
+&lt;p&gt;Fever trip has always been about making sudden, sketchy, mostly dubious judgement calls and taking an initiative to follow it through. This will effectively be that. It’s about the instinct to do sometning cool, maybe not really menaningful but really cool. I will try to actively blog here, documenting my endeavors in coding and engineering. Maybe along the way I will learn and reflect more as an upshot.
+Cheers.&lt;/p&gt;</content:encoded></item></channel></rss>
