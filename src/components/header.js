@@ -61,7 +61,7 @@ const getItemDescription = (item) => {
 }
 
 const onCurrentPage = (link) => {
-  return window.location.pathname === link;
+  return typeof window !== 'undefined' && window.location.pathname === link;
 }
 
 const Header = (props) => {

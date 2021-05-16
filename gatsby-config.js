@@ -72,30 +72,12 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Source Code Pro`,
-            variants: [`400`],
-          },
-          {
-            family: `Space Mono`,
-            variants: [`400, 400i`]
-          },
-          {
-            family: `Abril Fatface`,
-            variants: [`400`]
-          },
-          {
-            family: `Roboto Mono`,
-            variants: [`400, 400i`]
-          },
-          {
-            family: `Lato`,
-            variants: [`700`]
-          },
+          `Source Code Pro\:400`, `Space Mono\:400,400i`, `Abril Fatface\:400`, `Roboto Mono\:400,400i`, `Lato\:700`,
         ],
+        display: `swap`
       },
     },
     `gatsby-plugin-sitemap`,
