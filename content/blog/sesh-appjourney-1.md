@@ -40,4 +40,4 @@ I will write about 0.2 in the coming weeks, what it set out to do, and what it e
 
 
 
-[here]: http://www.reddit.com
+[here]: https://www.fvrtrp.com/sesh
