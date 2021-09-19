@@ -11,8 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "../styles/layout.scss"
+import Background from "./background"
 
-const Layout = ({ children, type }) => {
+const Layout = ({ children, type, page }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -41,6 +42,10 @@ const Layout = ({ children, type }) => {
         FVRTRP</a>
         </footer>
       </div>
+      {
+        page === "home" &&
+        <Background />
+      }
     </>
   )
 }
