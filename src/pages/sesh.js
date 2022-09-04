@@ -14,8 +14,6 @@ import screen2 from '../images/sesh/screen2.png';
 import screen3 from '../images/sesh/screen3.png';
 import screen4 from '../images/sesh/screen4.png';
 import screen5 from '../images/sesh/screen5.png';
-import screen6 from '../images/sesh/screen6.png';
-import screen7 from '../images/sesh/screen7.png';
 
 const sliderSettings = {
   dots: true,
@@ -54,7 +52,7 @@ const Sesh = () => {
             <div className="carouselItem">
               <img className="carouselImage" src={screen2} alt="screenshot" />
               <div className="carouselItemDescription">
-              Customizable - choose to show time, date & time, custom message, bookmarks or nothing.
+              Customizable - choose to show date & time, nihilist quotes, custom message, and combine with the perfect themes.
               </div>
             </div>
             <div className="carouselItem">
@@ -66,25 +64,13 @@ const Sesh = () => {
             <div className="carouselItem">
               <img className="carouselImage" src={screen4} alt="screenshot" />
               <div className="carouselItemDescription">
-              Built entirely with vanilla js/css. Only ~70kb. Does not slow up your browser.
+              Built entirely with vanilla js/css. Only ~50kb. Does not slow up your browser.
               </div>
             </div>
             <div className="carouselItem">
               <img className="carouselImage" src={screen5} alt="screenshot" />
               <div className="carouselItemDescription">
-              Comes with 4 beautiful themes.
-              </div>
-            </div>
-            <div className="carouselItem">
-              <img className="carouselImage" src={screen6} alt="screenshot" />
-              <div className="carouselItemDescription">
-              Open source. Contribute, or fork the project on github to make it your own!
-              </div>
-            </div>
-            <div className="carouselItem">
-              <img className="carouselImage" src={screen7} alt="screenshot" />
-              <div className="carouselItemDescription">
-                You can now pin bookmarks to access them from any setting
+              Useful, for when you access select bookmarks often.
               </div>
             </div>
           </Slider>
