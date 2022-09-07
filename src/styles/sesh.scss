@@ -39,7 +39,7 @@
         margin: 100px 10% 0;
         .carouselItem {
             .carouselImage {
-                max-width: 100%;
+                max-width: 60%;
                 margin: auto;
             }
             .carouselItemDescription {
@@ -91,7 +91,7 @@
         .carouselItem {
             .carouselImage {
                 min-width: revert !important;
-                max-width: 100%;
+                max-width: 80%;
                 object-fit: contain;
                 border: none !important;
                 margin-bottom: 50px !important;
