@@ -9,11 +9,11 @@ import "slick-carousel/slick/slick-theme.css";
 import '../styles/sesh.scss';
 
 import seshLogo from '../images/sesh/sesh-new.svg';
-import screen1 from '../images/sesh/screen1.png';
-import screen2 from '../images/sesh/screen2.png';
-import screen3 from '../images/sesh/screen3.png';
-import screen4 from '../images/sesh/screen4.png';
-import screen5 from '../images/sesh/screen5.png';
+import screen1 from '../images/sesh/1.png';
+import screen2 from '../images/sesh/2.png';
+import screen3 from '../images/sesh/3.png';
+import screen4 from '../images/sesh/4.png';
+import screen5 from '../images/sesh/5.png';
 
 const sliderSettings = {
   dots: true,
@@ -52,25 +52,25 @@ const Sesh = () => {
             <div className="carouselItem">
               <img className="carouselImage" src={screen2} alt="screenshot" />
               <div className="carouselItemDescription">
-              Customizable - choose to show date & time, nihilist quotes, custom message, and combine with the perfect themes.
+              Movie-posters mode has some neat transitions to fixate over some iconic posters.
               </div>
             </div>
             <div className="carouselItem">
               <img className="carouselImage" src={screen3} alt="screenshot" />
               <div className="carouselItemDescription">
-                Intuitive bookmarks browser with pin, search, and other useful functions.
+                Try the geometry theme to see some blissful floating boxes.
               </div>
             </div>
             <div className="carouselItem">
               <img className="carouselImage" src={screen4} alt="screenshot" />
               <div className="carouselItemDescription">
-              Built entirely with vanilla js/css. Only ~50kb. Does not slow up your browser.
+                The Google-Earth theme shows amazing landscapes from all around the globe.
               </div>
             </div>
             <div className="carouselItem">
               <img className="carouselImage" src={screen5} alt="screenshot" />
               <div className="carouselItemDescription">
-              Useful, for when you access select bookmarks often.
+              Customizable - choose from several themes to fit your mood & style. Only ~75kb. Does not slow down your browser.
               </div>
             </div>
           </Slider>
