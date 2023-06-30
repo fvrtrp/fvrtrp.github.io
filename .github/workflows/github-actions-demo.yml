@@ -20,16 +20,14 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   Rebuild-site:
       runs-on: ubtuntu-latest
-      strategy:
-        matrix:
-          node-version: [14.x, 16.x, 18.x, 20.x]
-
       steps:
         - uses: actions/checkout@v3
-        - name: Use Node.js ${{ matrix.node-version }}
+        - name: Use Node.js
           uses: actions/setup-node@v3
           with:
-            node-version: ${{ matrix.node-version }}
-        - run: npm ci
-        - run: npm run deploy
+            node-version: '18.x'
+        - name: Install dependencies
+          run: npm ci
+        - name: Deploy
+          run: npm run deploy
   
